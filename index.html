@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script language="javascript" type="text/javascript" src="js/index.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style type="text/css">
+		body{
+			background-image: url('Fundo.png');
+		}
+		#tabuleiro{
+			margin-left: 175px;
+			padding-top: 30px;
+			height: 416px;
+			font-style:Noto Sans, sans-serif;
+		}
+		#fundo{
+			width: 600px;
+			height: 475px;
+			margin: auto;
+			margin-top: 60px;
+			background-image: url('Back.png');
+		}
+		#pontos1{
+			padding-left: 52px;
+			margin-top: -74px;
+			font-style:Noto Sans, sans-serif;
+		}
+		#pontos2{
+			padding-left: 52px;
+			padding-top: 30px;
+			font-style:Noto Sans, sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<div id="fundo">
+		<div id="tabuleiro">
+
+		</div>
+		<div id="pontos1">
+		</div>
+		<div id="pontos2">
+		</div>
+	</div>
+
+<!-- <div>
+	<svg>
+		<clipPath id="mep1">
+			<circle cx="30" cy="30" r="20" />
+		</clipPath>
+    	<image id="wabaladu" clip-path="url(#mep1)" x="10" y="10" height="40" width="40" xlink:href="player 1.png" />
+   	</svg>
+</div> -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		tabuleiro(8,8);
+	});
+</script>
+</body>
+</html>
